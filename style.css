@@ -95,10 +95,11 @@ video {
     --color02: rgb(2, 57, 105);
     --color03: rgb(250,238,197);
     --color04: rgb(190,173,125);
-    --color05: rgb(124,99,59);
-    --color06: rgb(124,99,59);
-    --color06: rgb(171,164,122);
-    --color06: rgb(185,166,92);
+    --color05: #F6C8CC;
+    --color06: #EBF5F7;
+    --color07: #C15B78;
+    --color08: #5BB0BA;
+    --color09: #FFDB15
 }
 
 html {
@@ -110,7 +111,7 @@ body {
     height: 100%;
     width: 100%;
     font-family: 'Roboto', sans-serif;
-    background-color: var(--color05)
+    background-color: var(--color09)
 }
 
 .top-nav-container {
@@ -131,7 +132,7 @@ body {
 
 .top-menu>li {
     font-size: 24px;
-    color: rgb(2, 57, 105);
+    color: var(--color02);
     height: 100%;
     box-sizing: border-box;
     display: flex;
