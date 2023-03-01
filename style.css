@@ -127,6 +127,9 @@ body {
     width: 100%;
     background-color: var(--color00);
     justify-content: space-between;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
 }
 
 .top-menu {
@@ -151,6 +154,7 @@ body {
 .top-menu>li:hover {
     border-bottom: 1.5vh rgb(2, 57, 105) solid;
     cursor: pointer;
+    transition: all ease-in-out 0.2s;
 }
 
 .main-content-container {
@@ -159,6 +163,9 @@ body {
     gap: 5vw;
     height: 100%;
     width: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
 .left-container {
@@ -168,15 +175,23 @@ body {
     align-items: center;
     width: 50%;
     height: 100%;
+    
+}
+
+.left-container-title {
+    font-size: 3vw;
+    font-weight: 700;
+    color: var(--color00)
 }
 
 .text {
     width: 100%;
     height: 100%;
     background: radial-gradient(ellipse at center,
-            rgba(0, 128, 172, 1) 0%,
-            rgba(0, 128, 172, 1) 70%,
-            rgba(0, 128, 172, 0) 70.3%);
+            rgba(244, 218, 138, 255) 0%,
+            var(--color00) 70%,
+            rgba(138, 172, 0, 0) 70.3%);
+            
 }
 
 .text p {
@@ -187,6 +202,7 @@ body {
     text-align: center;
     font-style: italic;
     text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.3);
+    
 }
 
 .text::before {
@@ -206,6 +222,7 @@ body {
             98% 100%,
             0 100%);
     shape-margin: 7%;
+    
 }
 
 .text p::before {
@@ -225,6 +242,7 @@ body {
             76.6% 17.3%,
             50% 6%);
     shape-margin: 7%;
+    
 }
 
 
@@ -232,6 +250,7 @@ body {
     .quote-wrapper {
         width: 370px;
         height: 370px;
+        
     }
 
     .quote-wrapper::before {
@@ -247,7 +266,7 @@ body {
     }
 }
 
-.left-content-text {
+/* .left-content-text {
     width: 100%;
     height: 100%;
     background: radial-gradient(ellipse at center,
@@ -257,6 +276,7 @@ body {
     position: relative;
     margin: 0;
     color: white;
+    
 
 }
 
@@ -307,12 +327,16 @@ body {
             76.6% 17.3%,
             50% 6%);
     shape-margin: 7%;
-}
+} */
 
 footer {
     height: 7%;
+    color: #EBF5F7;
 }
-
+.bottom-menu > li:hover {
+    color: var(--color00);
+    transition: all ease-in-out 0.2s;
+}
 .bottom-menu {
     display: flex;
     justify-content: center;
