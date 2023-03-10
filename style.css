@@ -187,7 +187,8 @@ body {
 .left-container-title {
     font-size: 2.5vw;
     font-weight: 700;
-    color: white
+    /* color: rgb(69, 68, 68) */
+    color: var(--color01)
 }
 
 .text {
