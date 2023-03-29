@@ -212,13 +212,14 @@ body {
 
 
 .main-content-container {
-    padding: 6vh;
+    padding: 2vh;
     display: flex;
     gap: 5vw;
     height: 100%;
     width: 100%;
     justify-content: center;
     /* align-items: center; */
+
 
 }
 
@@ -372,6 +373,96 @@ img {
 
 .main-content-title {
     font-size: 4vw;
-    padding-top: 4vh;
-text-align: center;
+    padding-top: 2vh;
+    padding-bottom: 6vh;
+    text-align: center;
+}
+
+.calendar-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding-left: 5vw;
+}
+
+.calendar-content-title {
+    font-size: 2vw;
+    padding-bottom: 2vh;
+}
+
+.calendar-main-content-container {
+    display: flex;
+    flex-direction: column;
+
+    gap: 6vh;
+}
+
+.calendar-content-box {
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+    width: 100%;
+    padding-left: 5vw;
+}
+
+.calendar-content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 200px));
+    grid-template-rows: repeat(2, minmax(100px, 200px));
+    grid-auto-flow: row;
+    grid-gap: 2vw;
+}
+
+.grid-box {
+    background-color: rgb(220, 209, 225);
+    min-height: 50px;
+    min-width: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    padding: 1vh;
+    align-items: center;
+    text-align: center;
+}
+
+.join-content-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.join-content-title {
+    font-size: 28px;
+}
+.join-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 4vw;
+    width: 100%;
+    align-items: center;
+}
+
+.join-form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.join-form {
+    font-size:18px;
+}
+fieldset {
+    min-width: 200px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset>textarea {
+    height: 100px;
+}
+
+input, select {
+    font-size: 18px;
+    border-radius: 1px;
+    height: 25px;
 }
