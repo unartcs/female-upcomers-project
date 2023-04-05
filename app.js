@@ -1,0 +1,1 @@
+const submitJoinUs = document.querySelector('.submit-btn')
