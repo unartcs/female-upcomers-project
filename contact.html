@@ -1,78 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Female Upcomers</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="app.js" defer></script>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="top-nav-container">
-        <div class="top-nav-logo">
-            <img src="./imgs/logotransparenttrimmed.png" alt="Female Upcomers Logo" width="100px">
-        </div>
-        <ul class="top-menu">
-            <a href="./index.html">
-                <li>Om os</li>
-            </a>
-            <a href="./calendar.html">
-                <li>Activiteskalender</li>
-            </a>
-            <a href="./join.html">
-                <li>Bliv Meellem</li>
-            </a>
-            <a href="./podcast.html">
-                <li>Podcast</li>
-            </a>
-            <a href="contact.html">
-                <li>Kontakt</li>
-            </a>
-        </ul>
+      <div class="top-nav-logo">
+        <a href="./index.html">
+          <img
+            src="./imgs/logotransparenttrimmed.png"
+            alt="Female Upcomers Logo"
+            width="100px"
+          />
+        </a>
+      </div>
+      <ul class="top-menu">
+        <a href="./index.html"> <li>Forside</li> </a>
+        <a href="./about.html"> <li>Om os</li> </a>
+        <a href="./calendar.html"> <li>Aktivitetskalender</li> </a>
+        <a href="./join.html"><li>Bliv Medlem</li> </a>
+        <a href="./podcast.html"><li>Podcast</li> </a>
+        <a href="./contact.html"><li class='selected-page'>Kontakt</li> </a>
+      </ul>
     </div>
     <div class="main-content-container">
-        <div class="contact-us-wrapper">
-            <div class="contact-us-container">
-                <div class="contact-us-title">
-                    Contact Us
-                </div>
-                <div class="contact-us-content">
-                    <ul class="contact-list">
-                        <li><img src=imgs/email-logo.png alt='email' width="60px"></li>
-                        <li><img src=imgs/facebook-logo.png alt='facebook' width="60px"></li>
-                        <li><img src=imgs/instagram-logo.png alt='instagram' width="60px"></li>
-                        <li><img src=imgs/linkedin-logo.png alt='linkedin' width="60px"></li>
-                    </ul>
-                </div>
-            </div>
-            <form class="contact-form">
-                <fieldset>
-                    <label for="full_name">Name:</label>
-                    <input type="text" id="full_name" name="full_name">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email">
-                    <label for="subject">Subject:</label>
-                    <input type="text" id="subject" name="subject">
-                    <label for="message">Message:</label>
-                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                    <fieldset class="submit-btn-field">
-                        <button type="submit" class="submit-btn">Submit</button>
-                    </fieldset>
-                </fieldset>
-            </form>
+      <div class="contact-us-wrapper">
+        <div class="contact-us-container">
+          <div class="contact-us-title">Kontakt os</div>
         </div>
+        <form class="contact-form">
+          <fieldset>
+            <input
+              type="text"
+              id="full_name"
+              name="full_name"
+              placeholder="Nav..."
+              required
+            />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email..."
+              required
+            />
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="Emne..."
+              required
+            />
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Nesked..."
+              required
+            ></textarea>
+            <fieldset class="submit-btn-field">
+              <button type="submit" class="submit-btn">Send</button>
+            </fieldset>
+          </fieldset>
+        </form>
+        <div class="contact-us-content">
+          <ul class="contact-list">
+            <li>
+              <img src=imgs/icons8-facebook-color-120.png alt='facebook'
+              width="60px">
+            </li>
+            <li>
+              <img src=imgs/icons8-instagram-240.png alt='instagram'
+              width="60px">
+            </li>
+            <li>
+              <img src=imgs/icons8-linkedin-480.png alt='linkedin' width="60px">
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <footer>
-        <ul class="bottom-menu">
-            <li><img src=imgs/facebook-logo.png width="20px">Facebook</li>
-            <li><img src=imgs/instagram-logo.png width="20px">Instagram</li>
-            <li><img src=imgs/linkedin-logo.png width="20px">Linkedin</li>
-        </ul>
-    </footer>
-</body>
-
+  </body>
 </html>

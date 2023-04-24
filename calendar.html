@@ -1,98 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Female Upcomers</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="app.js" defer></script>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-
+  <body>
     <div class="top-nav-container">
-        <div class="top-nav-logo">
-            <img src="./imgs/logotransparenttrimmed.png" alt="Female Upcomers Logo" width="100px">
-        </div>
-        <ul class="top-menu">
-            <a href="./index.html">
-                <li>Om os</li>
-            </a>
-            <a href="./calendar.html">
-                <li>Activiteskalender</li>
-            </a>
-            <a href="./join.html">
-                <li>Bliv Meellem</li>
-            </a>
-            <a href="./podcast.html">
-                <li>Podcast</li>
-            </a>
-            <a href="contact.html">
-                <li>Kontakt</li>
-            </a>
-        </ul>
+      <div class="top-nav-logo">
+        <a href="./index.html">
+          <img
+            src="./imgs/logotransparenttrimmed.png"
+            alt="Female Upcomers Logo"
+            width="100px"
+          />
+        </a>
+      </div>
+      <ul class="top-menu">
+        <a href="./index.html"> <li>Forside</li> </a>
+        <a href="./about.html"> <li>Om os</li> </a>
+        <a href="./calendar.html">
+          <li class="selected-page">Aktivitetskalender</li>
+        </a>
+        <a href="./join.html"><li>Bliv Medlem</li> </a>
+        <a href="./podcast.html"><li>Podcast</li> </a>
+        <a href="./contact.html"><li>Kontakt</li> </a>
+      </ul>
     </div>
     <div class="main-content-container">
-        <div class="calendar-main-content-container">
-            <div class="calendar-content-wrapper">
-                <div class="calendar-content-title">
-                    Activiteskalender
-                </div>
-                <div class="calendar-content-text">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto expedita quibusdam odio iste fugit
-                    architecto? Hic ipsum ipsa fugit, magnam quis porro, saepe blanditiis aliquam quod consectetur
-                    doloribus, debitis inventore?
-                </div>
-
-            </div>
-            <div class="calendar-content-box">
-                <div class="calendar-content-box-title">Program 2023</div>
-                <div class="calendar-content-grid">
-                    <div class="grid-box">October 22nd
-                        <p>Happy halloween</p>
-                    </div>
-                    <div class="grid-box">February 2nd
-                        <p>I dont know</p>
-                    </div>
-                    <div class="grid-box">April 6th
-                        <p>Easter asdadasd</p>
-                    </div>
-                    <div class="grid-box">July 10th
-                        <p>Something something</p>
-                    </div>
-                    <div class="grid-box">October 21th
-                        <p>Something something</p>
-                    </div>
-                    <div class="grid-box">November 25th
-                        <p>Something something</p>
-                    </div>
-                    <div class="grid-box">December 2nd
-                        <p>Something something</p>
-                    </div>
-                    <div class="grid-box">December 2nd
-                        <p>Something something</p>
-                    </div>
-                    <div class="grid-box">December 2nd
-                        <p>Something something</p>
-                    </div>
-                    <div class="grid-box">December 2nd
-                        <p>Something something</p>
-                    </div>
-                    
-                </div>
-            </div>
+      <div class="opened-calendar-wrapper">
+        <div class="opened-calendar-title">Fa bugt med budgettet</div>
+        <div class="opened-calendar-undertitle">
+          Har du styr på budgettet eller budget på styret?
         </div>
+        <div class="opened-calendar-desc">
+          <div class="opened-calendar-desc-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+            molestias commodi iste at accusantium iure modi sequi saepe facere
+            atque molestiae, neque, cumque assumenda. Perspiciatis neque maiores
+            voluptatem alias totam.
+          </div>
+          <div class="opened-calendar-desc-image">
+            <img src="/imgs/budgeticon-removebg-preview.png" alt="budget" />
+          </div>
+        </div>
+        <div class="opened-calendar-info">
+          <div class="opened-calendar-button"><button>Tilmeld dig</button></div>
+          <div class="opened-calendar-speaker">
+            <img src="/imgs/clockicon-removebg-preview.png" alt="time" />
+            <span>Mr. Myagi</span>
+          </div>
+          <div class="opened-calendar-date">
+            <img src="/imgs/clockicon-removebg-preview.png" alt="time" />
+            <span>01/01/23 kl.16-18</span>
+          </div>
+          <div class="opened-calendar-location">
+            <img src="/imgs/location.png" alt="location" />
+            <span>Inkubatoren, Campus nord</span>
+          </div>
+        </div>
+      </div>
+      <div class="calendar-main-content-container">
+        <div class="calendar-content-wrapper">
+          <div class="calendar-content-title">Aktivitetskalender</div>
+          <div class="calendar-content-text">Se vores kommende events</div>
+        </div>
+        <div class="calendar-grid-wrapper">
+          <div class="calendar-grid-box">
+            <div class="calendar-grid-box-image">
+              <img src="/imgs/budgeticon-removebg-preview.png" alt="budget" />
+            </div>
+            <div class="calendar-grid-box-title">Fa bugt med budgettet</div>
+            <div class="calendar-grid-box-desc">
+              Har du styr på budgettet eller budget på styret?
+            </div>
+            <div class="calender-grid-box-info">
+              <div class="calendar-grid-box-info-date">
+                <img src="/imgs/clockicon-removebg-preview.png" alt="time" />
+                <span>01/01/23 kl.16-18</span>
+              </div>
+              <div class="calendar-grid-box-info-location">
+                <img src="/imgs/location.png" alt="location" />
+                <span>Inkubatoren, Campus nord</span>
+              </div>
+            </div>
+          </div>
+          <div class="calendar-grid-box">
+            <div class="calendar-grid-box-image">
+              <img src="/imgs/cubesicon-removebg-preview.png" alt="budget" />
+            </div>
+            <div class="calendar-grid-box-title">Struktur og ivæksætteri</div>
+            <div class="calendar-grid-box-desc">
+              Har du styr på budgettet eller budget på styret?
+            </div>
+            <div class="calender-grid-box-info">
+              <div class="calendar-grid-box-info-date">
+                <img src="/imgs/clockicon-removebg-preview.png" alt="time" />
+                <span>01/01/23 kl.16-18</span>
+              </div>
+              <div class="calendar-grid-box-info-location">
+                <img src="/imgs/location.png" alt="location" />
+                <span>Inkubatoren, Campus nord</span>
+              </div>
+            </div>
+          </div>
+          <div class="calendar-grid-box">
+            <div class="calendar-grid-box-image">
+              <img src="/imgs/networkicon-removebg-preview.png" alt="budget" />
+            </div>
+            <div class="calendar-grid-box-title">Netværk og Gintonics</div>
+            <div class="calendar-grid-box-desc">
+              Har du styr på budgettet eller budget på styret?
+            </div>
+            <div class="calender-grid-box-info">
+              <div class="calendar-grid-box-info-date">
+                <img src="/imgs/clockicon-removebg-preview.png" alt="time" />
+                <span>01/01/23 kl.16-18</span>
+              </div>
+              <div class="calendar-grid-box-info-location">
+                <img src="/imgs/location.png" alt="location" />
+                <span>Inkubatoren, Campus nord</span>
+              </div>
+            </div>
+          </div>
+          <div class="calendar-grid-box">
+            <div class="calendar-grid-box-image">
+              <img src="/imgs/budgeticon-removebg-preview.png" alt="budget" />
+            </div>
+            <div class="calendar-grid-box-title">Fa bugt med budgettet</div>
+            <div class="calendar-grid-box-desc">
+              Har du styr på budgettet eller budget på styret?
+            </div>
+            <div class="calender-grid-box-info">
+              <div class="calendar-grid-box-info-date">
+                <img src="/imgs/clockicon-removebg-preview.png" alt="time" />
+                <span>01/01/23 kl.16-18</span>
+              </div>
+              <div class="calendar-grid-box-info-location">
+                <img src="/imgs/location.png" alt="location" />
+                <span>Inkubatoren, Campus nord</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <footer>
-        <ul class="bottom-menu">
-            <li><img src=imgs/facebook-logo.png width="20px">Facebook</li>
-            <li><img src=imgs/instagram-logo.png width="20px">Instagram</li>
-            <li><img src=imgs/linkedin-logo.png width="20px">Linkedin</li>
-        </ul>
-    </footer>
-</body>
-
+  </body>
 </html>

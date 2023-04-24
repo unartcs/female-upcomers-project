@@ -1,91 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Female Upcomers</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="app.js" defer></script>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="top-nav-container">
-        <div class="top-nav-logo">
-            <img src="./imgs/logotransparenttrimmed.png" alt="Female Upcomers Logo" width="100px">
-        </div>
-        <ul class="top-menu">
-            <a href="./index.html">
-                <li>Om os</li>
-            </a>
-            <a href="./calendar.html">
-                <li>Activiteskalender</li>
-            </a>
-            <a href="./join.html">
-                <li>Bliv Meellem</li>
-            </a>
-            <a href="./podcast.html">
-                <li>Podcast</li>
-            </a>
-            <a href="contact.html">
-                <li>Kontakt</li>
-            </a>
-        </ul>
+      <div class="top-nav-logo">
+        <a href="./index.html">
+          <img
+            src="./imgs/logotransparenttrimmed.png"
+            alt="Female Upcomers Logo"
+            width="100px"
+          />
+        </a>
+      </div>
+      <ul class="top-menu">
+        <a href="./index.html"> <li>Forside</li> </a>
+        <a href="./about.html"> <li>Om os</li> </a>
+        <a href="./calendar.html"> <li>Aktivitetskalender</li> </a>
+        <a href="./join.html"><li class='selected-page'>Bliv Medlem</li> </a>
+        <a href="./podcast.html"><li>Podcast</li> </a>
+        <a href="./contact.html"><li>Kontakt</li> </a>
+      </ul>
     </div>
     <div class="main-content-container">
-        <div class="join-content-wrapper">
-            <div class="join-content-container">
-                <div class="join-content-title">Bliv Meellem</div>
-            </div>
-            <div class="join-form-container">
-                <form class="join-form" action="https://formsubmit.co/unartcs@gmail.com" method="POST">
-                    <fieldset class="join_form_field">
-                        <label for="Name">Name: </label>
-                        <input type="text" name="Name" id="Name" required>
-                        <label for="Email">Email: </label>
-                        <input type="email" name="Email" id="Email" required>
-                    </fieldset>
-                    <fieldset>
-                        <label for="Education">Education: </label>
-                        <input type="text" name="Education" id="Education" required>
-                        <label for="Semester">Semester: </label>
-                        <select id="Semester" name="Semester">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                        </select>
-                    </fieldset>
-                    <fieldset>
-                        <label for='Join_Reason'>Why do you want to join Female Upcomers</label>
-                        <textarea id="Join_Reason" name="Join_Reason"></textarea>
-                    </fieldset>
-                    <fieldset>
-                        <label for='What_Do_You_Expact_From_FemaleUpcomers'>What do you want from Female
-                            Upcomers</label>
-                        <textarea id="What_Do_You_Expact_From_FemaleUpcomers"
-                            name="What_Do_You_Expact_From_FemaleUpcomers"></textarea>
-                    </fieldset>
-                    <fieldset class="submit-btn-field">
-                        <button type="submit" class="submit-btn">Join Us!</button>
-                    </fieldset>
-                </form>
-            </div>
+      <div class="join-content-wrapper">
+        <div class="join-content-container">
+          <div class="join-content-title">Bliv Medlem</div>
         </div>
+        <div class="join-form-container">
+          <form
+            class="join-form"
+            action="https://formsubmit.co/unartcs@gmail.com"
+            method="POST"
+          >
+            <fieldset class="join_form_field">
+              <input
+                type="text"
+                name="name"
+                id="Name"
+                placeholder="Navn..."
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                id="Email"
+                placeholder="Email..."
+                required
+              />
+            </fieldset>
+            <fieldset>
+              <select
+                aria-label="label for the select"
+                id="education"
+                name="education"
+              >
+                <option value="" selected disabled hidden>Udannelse...</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+              </select>
+            </fieldset>
+            <fieldset>
+              <textarea
+                id="Join_Reason"
+                name="Join_Reason"
+                placeholder="Motivation for at blive en del af netværket..."
+                required
+              ></textarea>
+            </fieldset>
+            <fieldset>
+              <textarea
+                id="What_Do_You_Expact_From_FemaleUpcomers"
+                name="What_Do_You_Expact_From_FemaleUpcomers"
+                placeholder="Motivation for at blive en del af netværket..."
+                required
+              ></textarea>
+            </fieldset>
+            <fieldset class="submit-btn-field">
+              <button
+                class="join-form-submit-button"
+                type="submit"
+                class="submit-btn"
+              >
+                Tilmeld dig
+              </button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
     </div>
-    <footer>
-        <ul class="bottom-menu">
-            <li><img src=imgs/facebook-logo.png width="20px">Facebook</li>
-            <li><img src=imgs/instagram-logo.png width="20px">Instagram</li>
-            <li><img src=imgs/linkedin-logo.png width="20px">Linkedin</li>
-        </ul>
-    </footer>
-</body>
-
+  </body>
 </html>
